@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            display: grid;
+            width: 400px;
+            height: 200px;
+            margin: auto;
+            position: relative;
+            top: 20em;
+            border: 2px solid black;
+            padding: 200px;
+            border-radius: 15px;
+            background-color: rgb(243, 235, 226);
+        }
+
+        button{
+            border: 2px solid rgb(0, 0, 0);
+            border-radius: 15px;
+            background-color: rgb(238, 211, 35);
+            width: 250px;
+            height: 150px;
+            font-weight: 700;
+            margin: auto;
+        }
+
+        button:hover{
+            background-color: red;
+            width: 350px;
+            height: 250px;
+            cursor: pointer;
+            font-size: 50px;
+            color: white;
+        }
+
+    </style>
+</head>
+
+<body>
+    <form>
+        <button onclick="sayHello()">
+            <span>Жми</span>
+        </button>
+    </form>
+    <script>
+        function sayHello(){
+            let name = prompt("Введите имя:")
+            alert("Привет " + name)
+        }
+    </script>
+</body>
+
+</html>
